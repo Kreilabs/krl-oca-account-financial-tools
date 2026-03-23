@@ -154,7 +154,7 @@
             <t t-foreach="docs" t-as="o">
                 <t
                     t-call="account_move_print.report_journal_entry_document"
-                    t-lang="o.user_id.lang"
+                    t-lang="o.user_id.lang or 'es_UY'"
                 />
             </t>
         </t>
